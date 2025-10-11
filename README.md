@@ -266,12 +266,12 @@ Text Statistics:
 
 ```
 ├── data/                      # Raw and processed data
-├── notebooks/                 # Code Descriptions
+├── reports/                   # Code Descriptions
 ├── src/                       # Source code
 │   ├── data/                  # Preprocessing pipeline
 │   ├── model/                 # Model architectures
 │   └── pipeline/              # Training orchestration
-├── artifact/                  # EDA reports and figures
+├── artifactd/                 # EDA reports and figures
 └── scripts/                   # Prediction scripts
 ```
 
