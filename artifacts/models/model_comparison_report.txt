@@ -1,0 +1,65 @@
+================================================================================
+WEBMD DRUG REVIEW - COMPREHENSIVE MODEL COMPARISON REPORT
+================================================================================
+
+1. OVERVIEW
+--------------------------------------------------------------------------------
+Total models evaluated: 3
+Models: TEXTCNN, IMPROVED_BILSTM, IMPROVED_BERT
+
+2. PERFORMANCE METRICS
+--------------------------------------------------------------------------------
+                 accuracy  macro_f1  cohen_kappa
+improved_bert      0.7912    0.6723       0.6469
+improved_bilstm    0.7230    0.6251       0.5428
+textcnn            0.6697    0.6175       0.4900
+
+3. BEST MODELS PER METRIC
+--------------------------------------------------------------------------------
+  ACCURACY: IMPROVED_BERT (0.7912)
+  MACRO_F1: IMPROVED_BERT (0.6723)
+  COHEN_KAPPA: IMPROVED_BERT (0.6469)
+
+4. OVERALL RECOMMENDATION
+--------------------------------------------------------------------------------
+Best overall model: IMPROVED_BERT
+Macro-F1 Score: 0.6723
+
+Reason: Macro-F1 is chosen as the primary metric for multi-class
+imbalanced classification, as it gives equal weight to all classes.
+
+5. MODEL-SPECIFIC ANALYSIS
+--------------------------------------------------------------------------------
+
+  TEXTCNN
+  ----------------------------------------
+    accuracy: 0.6697
+    macro_f1: 0.6175
+    cohen_kappa: 0.4900
+    Notes: Captures local patterns, efficient inference
+
+  IMPROVED_BILSTM
+  ----------------------------------------
+    accuracy: 0.7230
+    macro_f1: 0.6251
+    cohen_kappa: 0.5428
+    Notes: Captures long-range dependencies, attention mechanism
+
+  IMPROVED_BERT
+  ----------------------------------------
+    accuracy: 0.7912
+    macro_f1: 0.6723
+    cohen_kappa: 0.6469
+    Notes: State-of-the-art, transfer learning, computationally expensive
+
+6. DEPLOYMENT RECOMMENDATIONS
+--------------------------------------------------------------------------------
+  - For production (speed + accuracy): TextCNN or BiLSTM
+  - For highest accuracy: BERT-based model
+  - For interpretability: SVM + TF-IDF
+  - For real-time inference: TextCNN
+  - For ensemble: Combine top 3 models with soft voting
+
+================================================================================
+END OF REPORT
+================================================================================

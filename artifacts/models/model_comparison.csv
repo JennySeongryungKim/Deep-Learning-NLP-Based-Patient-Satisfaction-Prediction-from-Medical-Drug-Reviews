@@ -1,0 +1,4 @@
+,accuracy,macro_f1,cohen_kappa
+improved_bert,0.7912,0.6723,0.6469
+improved_bilstm,0.723,0.6251,0.5428
+textcnn,0.6697,0.6175,0.49
