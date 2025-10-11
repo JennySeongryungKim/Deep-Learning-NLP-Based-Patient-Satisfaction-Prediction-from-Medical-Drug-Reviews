@@ -1,0 +1,13 @@
+{
+  "text_length_stats": {
+    "mean_length": 347.4548898294133,
+    "median_length": 254.0,
+    "std_length": 318.61252535423176,
+    "min_length": 5,
+    "max_length": 3145,
+    "mean_word_count": 65.49067911605066,
+    "median_word_count": 48.0
+  },
+  "satisfaction_stats": {
+    "10_class_distribution": {
+      

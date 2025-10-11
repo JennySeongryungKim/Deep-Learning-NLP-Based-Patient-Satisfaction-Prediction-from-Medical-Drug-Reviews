@@ -1,0 +1,113 @@
+================================================================================
+WEBMD DRUG REVIEW - EDA REPORT
+================================================================================
+
+1. TEXT LENGTH STATISTICS
+----------------------------------------
+  mean_length: 347.45
+  median_length: 254.00
+  std_length: 318.61
+  min_length: 5.00
+  max_length: 3145.00
+  mean_word_count: 65.49
+  median_word_count: 48.00
+
+2. SATISFACTION DISTRIBUTION
+----------------------------------------
+  10-class distribution:
+    Class 2: 76094
+    Class 4: 23898
+    Class 6: 32718
+    Class 8: 39835
+    Class 10: 75071
+
+  Sentiment distribution:
+    2: 114906
+    0: 99992
+    1: 32718
+
+  10-class imbalance ratio: 3.18
+  Sentiment imbalance ratio: 3.51
+
+3. TOP BIGRAMS
+----------------------------------------
+  started taking: 9393
+  weight gain: 8631
+  blood pressure: 8514
+  feel like: 7619
+  taking medication: 6734
+  birth control: 6663
+  mood swings: 5694
+  years ago: 5372
+  taking drug: 5251
+  stopped taking: 4878
+
+4. TOP TRIGRAMS
+----------------------------------------
+  high blood pressure: 1945
+  just started taking: 926
+  started taking medication: 845
+  flu like symptoms: 725
+  year old son: 552
+  started taking drug: 528
+  mg twice day: 526
+  short term memory: 497
+  birth control pills: 477
+  birth control pill: 467
+
+5. NEGATION ANALYSIS
+----------------------------------------
+  mean_negation_count: 1.2266412509692426
+  mean_negation_ratio: 0.0189414905055509
+  reviews_with_negation: 146541
+  negation_by_sentiment:
+    0: 0.0214
+    1: 0.0165
+    2: 0.0175
+
+6. SUBGROUP ANALYSIS
+----------------------------------------
+
+  AGE:
+           sent_label             
+                 mean   std  count
+Age                               
+                 0.97  0.93   6473
+0-2              0.94  0.94    279
+13-18            0.98  0.92   5250
+19-24            1.03  0.93  18828
+25-34            1.07  0.93  35854
+3-6              0.94  0.92    524
+35-44            1.12  0.92  38169
+45-54            1.10  0.93  54274
+55-64            1.05  0.93  50650
+65-74            1.02  0.93  27078
+7-12             0.99  0.93   1089
+75 or over       0.94  0.92   9148
+
+  SEX:
+       satisfaction_score_10              
+                        mean   std   count
+Sex                                       
+                        5.81  3.37   17433
+Female                  6.05  3.30  169650
+Male                    6.38  3.21   60533
+
+  CONDITION:
+                                              satisfaction_score_10             
+                                                               mean   std  count
+Condition                                                                       
+Attention Deficit Disorder with Hyperactivity                  6.70  3.06   4820
+Birth Control                                                  5.12  3.22  11864
+Chronic Trouble Sleeping                                       6.31  3.25   5397
+Depression                                                     6.37  3.11  11021
+High Blood Pressure                                            5.40  3.12  14702
+Major Depressive Disorder                                      6.03  3.31   3677
+Neuropathic Pain                                               6.15  3.16   4432
+Other                                                          6.05  3.35  35370
+Pain                                                           6.74  3.04  11832
+Type 2 Diabetes Mellitus                                       5.78  3.24   4114
+
+================================================================================
+END OF REPORT
+================================================================================
