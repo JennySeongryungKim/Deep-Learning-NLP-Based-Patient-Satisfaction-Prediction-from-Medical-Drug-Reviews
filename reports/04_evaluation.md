@@ -366,30 +366,26 @@ LONG-TERM (6-12 months):
 
 ### Model Artifact Checklist
 ```
-✅ PRODUCTION-READY ARTIFACTS:
 
-Model Files:
-├─ best_improved_bert.pt (80.3M params, 321 MB)
-├─ tokenizer/ (BERT WordPiece vocab)
-├─ vocabulary.pkl (50K words for CNN/LSTM)
-└─ preprocessing_config.json (cleaning params)
+✅ TRAINED MODEL ARTIFACTS:
 
-Configuration:
-├─ model_config.yaml (hyperparameters)
-├─ deployment_config.yaml (serving settings)
-└─ feature_engineering.py (preprocessing pipeline)
+Source Code:
+├─ src/data/ (preprocessing pipeline)
+├─ src/model/ (architectures, losses, training)
+└─ src/pipeline/ (training orchestration)
 
-Documentation:
-├─ model_card.md (performance, limitations, biases)
-├─ API_documentation.md (inference API spec)
-├─ monitoring_guide.md (drift detection, retraining triggers)
-└─ ethical_guidelines.md (use cases, restrictions)
+Generated Reports:
+├─ reports/eda/eda_report.pkl
+├─ reports/eda/eda_report.txt
+├─ reports/model_comparison.csv
+└─ reports/figures/*.png
 
-Testing:
-├─ unit_tests/ (preprocessing, model forward pass)
-├─ integration_tests/ (end-to-end pipeline)
-├─ performance_tests/ (latency, throughput)
-└─ adversarial_tests/ (edge cases, failure modes)
+⚠️ TO BE IMPLEMENTED:
+├─ Config files (YAML for hyperparameters)
+├─ API endpoints (REST/gRPC)
+├─ Monitoring dashboards
+├─ Unit/integration tests
+└─ Production deployment scripts
 ```
 
 ### API Specification
@@ -718,8 +714,8 @@ Demographics:
 ├─ best_improved_bilstm.pt (Macro F1: 0.625)
 └─ best_textcnn.pt (Macro F1: 0.618)
 
-✅ Preprocessing Pipeline: src/preprocessing/
-✅ Model Architectures: src/models/
+✅ Preprocessing Pipeline: src/data/
+✅ Model Architectures: src/model/
 ✅ Training Scripts: scripts/
 ✅ Evaluation Notebooks: notebooks/04_evaluation.ipynb
 ```
@@ -767,5 +763,5 @@ The model is **deployed and monitoring-ready**, with clear documentation, compre
 
 **End of Evaluation Report**  
 *Generated: 2025-10-10*  
-*Author: Deep Learning Team*  
+*Author: Jenny Seongryung Kim*  
 *Version: 1.0 (Final)*
